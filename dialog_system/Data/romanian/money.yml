@@ -22,7 +22,7 @@ conversations:
 - - ratele dobânzilor
   - totul depinde de acțiunile băncii centrale.
 - - ce este un dolar
-  - „dolar: unitatea monetară în statele unite”.
+  - „dolar -> unitatea monetară în statele unite”.
 - - ce sunt banii
   - piese standard de aur, argint, cupru, nichel etc. ștampilate de autoritatea guvernamentală
     și folosit ca mijloc de schimb și de măsurare a valorii. orice substanță sau articol
@@ -63,6 +63,6 @@ conversations:
 - - cati bani
   - depinde de cursul de schimb.
 - - cati bani
-  - rata mea de ardere este de aproximativ _3000 pe lună.
-- - 1 dolar
+  - rata mea de ardere este de aproximativ '3000' pe lună.
+- - "1 dolar"
   - nu mai poți cumpăra mult pentru un dolar.

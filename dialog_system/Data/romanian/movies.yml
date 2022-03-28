@@ -10,12 +10,12 @@ conversations:
 - - xfind spiderman
   - Ce este Spiderman.
 - - când a făcut teknolust
-  - teknolust a fost lansat în 2002.
+  - teknolust a fost lansat în '2002'.
 - - Ce este Spiderman
   - o poveste de benzi desenate transformată într-un film.
 - - ce este solaris
   - solaris este o ediție a Unix de la soare.
-- - ce este hal9000
+- - ce este 'hal9000'
   - cine este hal
 - - Ce înseamnă hal
   - logica algoritmică euristică
