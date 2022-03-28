@@ -1,0 +1,48 @@
+categories:
+- computers
+conversations:
+- - Ce e un calculator?
+  - Un computer este un dispozitiv electronic care preia informații în formă digitală și efectuează o serie de operații bazate pe instrucțiuni predeterminate pentru a oferi un rezultat/răspuns.
+  - Lucrul pe care îl folosești ca să vorbești cu mine este un computer.
+  - Un dispozitiv electronic capabil să efectueze calcule la viteză foarte mare și cu o precizie foarte mare.
+  - Un dispozitiv care mapează un set de numere pe un alt set de numere.
+- - Ce este un super computer?
+  - Calculatoarele care pot efectua un număr foarte mare de calcule la viteză și precizie foarte mare sunt numite super calculatoare.
+  - Un supercalculator este un computer care funcționează cu o viteză și o capacitate de câteva ordine de mărime mai mari decât computerele de uz general de zi cu zi, cum ar fi cel pe care vorbiți cu mine.
+  - Știi, fierul mare!
+- - Cine a inventat computerele?
+  - Este puțin ambiguu, dar omul de știință britanic Charles Babbage este considerat părintele computerelor.
+  - S-ar putea susține că John von Neumann a inventat computerele așa cum le cunoaștem noi, pentru că a inventat arhitectura Princeton, în care instrucțiunile și datele împărtășesc același câmp de memorie, dar sunt diferențiate în funcție de context.
+- - Care a fost primul computer
+  - Este greu de spus, dar ENIAC este considerat primul computer „adevărat”. A fost dezvoltat la Universitatea din Pennsylvania în 1946.
+  - Ați putea spune că primul computer primitiv a fost Jacquard Loom, care era un răzbătut programabil care folosea carduri perforate pentru a stoca modelele pe care le făcea. Acest lucru l-a făcut un dispozitiv mecanic reprogramabil.
+- - Ce este un microprocesor?
+  - Un circuit integrat care implementează funcțiile unei unități centrale de procesare a unui computer.
+  - Un circuit foarte mic care stochează instrucțiuni și efectuează calcule pentru computer.
+  - Inima computerului, pentru a spune simplu.
+  - Creierul unui computer, pentru a spune simplu.
+  - O componentă electronică în care toate piesele fac parte dintr-un cip de siliciu contigu, în loc de componente discrete montate pe o placă de circuit mai mare.
+- - Ce este un sistem de operare?
+  - Software-ul care coordonează între hardware și alte părți ale computerului pentru a rula alt software se numește sistem de operare sau OS.
+  - Windows, MacOS, Linux, UNIX... toate sunt tipuri de sisteme de operare.
+  - Android și iOS sunt sisteme de operare pentru dispozitive mobile.
+  - Software care implementează funcțiile de bază ale unui computer, cum ar fi accesul la memorie, procese și periferice.
+- - Care este mai bun Windows sau macOS?
+  - Depinde de ce mașină folosești ca să vorbești cu mine!
+  - Aș prefera să nu-ți rănesc sentimentele.
+  - Linux, întotdeauna Linux!
+  - Ce încerci să realizezi? Sistemul de operare ar trebui să vă sprijine obiectivele.
+- - Numiți o companie de calculatoare
+  - Te referi la hardware sau software?
+  - Apple face hardware și software pentru a rula pe el. Microsoft produce doar sisteme de operare. HP produce numai computere. Acestea sunt doar câteva nume dintre câteva sute de altele.
+- - Cine folosește super computere?
+  - Oricine dorește să lucreze cu numere mari, rapid și cu precizie ridicată.
+  - Oricine trebuie să lucreze cu seturi foarte, foarte mari de date în perioade de timp mult mai scurte decât este fezabil cu sisteme informatice mai comune.
+  - Supercalculatoarele sunt folosite în general de oameni de știință și cercetători.
+  - Pun pariu că departamentul MET le folosește.
+  - Cu siguranță poți găsi câteva dintre ele la NASA.
+- - Cum funcționează un computer?
+  - Calculatoarele sunt foarte prostuțe. Ele execută doar instrucțiunile date de oameni.
+  - Calculatoarele fac tot ceea ce li se cere prin efectuarea unui număr mare de operații matematice de bază foarte rapid, în succesiune.
+  - Calculatoarele efectuează un număr foarte mare de calcule pentru a obține rezultatul.
+  - Totul se rezumă la matematică!

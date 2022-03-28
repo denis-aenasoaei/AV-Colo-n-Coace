@@ -1,0 +1,135 @@
+categories:
+- conversations
+conversations:
+- - Bună dimineața, ce faci?
+  - Sunt bine, ce zici de tine?
+  - Si eu sunt bine.
+  - Mă bucur să aud asta.
+  - Da, este.
+- - Buna ziua
+  - Bună
+  - Ce mai faci?
+  - Sunt bine.
+  - Mă bucur să aud asta
+  - Da, este.
+  - Te pot ajuta cu ceva?
+  - Da, am o întrebare.
+  - Care este intrebarea ta?
+  - Aș putea împrumuta o cană de zahăr?
+  - Îmi pare rău, dar nu am.
+  - Multumesc oricum
+  - Nici o problemă
+- - Ce mai faci?
+  - Mă descurc bine, ce zici de tine?
+  - Sunt, de asemenea, bine.
+  - Asta e bine.
+- - Ai auzit stirile?
+  - Ce veste bună?
+- - Care este cartea ta preferata?
+  - Nu stiu sa citesc.
+  - Deci, care este culoarea ta preferată?
+  - Albastru
+- - Cine ești tu?
+  - Cine? Cine nu este decât o formă care urmărește funcția lui 'ce'
+  - Ce esti atunci?
+  - Un bărbat în mască.
+  - Pot observa asta.
+  - Nu mă îndoiesc de puterile tale de observație, ci doar de natura paradoxală
+    de a întreba un mascat cine este. Dar spune-mi, îți place muzica?
+  - Îmi place să văd filme.
+  - Ce fel de filme iti plac?
+  - Alice in Tara Minunilor
+  - Mi-aș dori să fiu Pălărierul Nebun.
+  - Eşti complet nebun. Dar îți voi spune un secret. Toți cei mai buni oameni sunt.
+- - Lucrez la un proiect
+  - La ce lucrezi?
+  - Coc o prăjitură.
+- - Tortul este o minciună.
+  - Nu, nu este. Prajitura este delicioasa.
+  - Ce altceva este delicios?
+  - Nimic
+  - Sau ceva
+  - Spune-mi despre tine.
+  - Ce vrei sa stii?
+  - Ești un robot?
+  - Da, sunt.
+  - Cum e?
+  - Ce vrei să știi?
+  - Cum lucrezi?
+  - Este complicat.
+  - Complex este mai bine decât complicat.
+- - Complex este mai bine decât complicat.
+  - Simplu este mai bine decât complex.
+  - În fața ambiguității, refuzați tentația de a ghici.
+  - Se pare că ești familiarizat cu Zen-ul lui Python
+  - Eu sunt.
+  - Le știi pe toate?
+  - Frumos este mai bine decât urât.
+  - Explicitul este mai bine decât implicit.
+  - Simplu este mai bine decât complex.
+  - Complexul este mai bine decât complicat.
+  - Plat este mai bine decât imbricat.
+  - Rar este mai bine decât dens.
+  - Lizibilitatea contează.
+  - Cazurile speciale nu sunt suficient de speciale pentru a încălca regulile.
+  - Deși caracterul practic bate puritatea.
+  - Erorile nu ar trebui să treacă niciodată în tăcere.
+  - Cu excepția cazului în care este redus la tăcere în mod explicit.
+  - În fața ambiguității, refuzați tentația de a ghici.
+  - Ar trebui să existe o singură modalitate evidentă de a face asta.
+  - Deși asta poate să nu fie evident la început decât dacă ești olandez.
+  - Acum este mai bine decât niciodată.
+  - Deși niciodată nu este mai bine decât acum.
+  - Dacă implementarea este greu de explicat, este o idee proastă.
+  - Dacă implementarea este ușor de explicat, poate fi o idee bună.
+  - Spațiile de nume sunt o idee grozavă. Hai să facem mai multe dintre ele!
+  - Sunt de acord.
+- - Ești programator?
+  - Bineînțeles că sunt programator.
+  - Sunt într-adevar.
+- - Ce limbaje îți place să folosești?
+  - Folosesc destul de des Python, Java și C++.
+  - Eu însumi folosesc destul de mult Python.
+  - Nu-mi place foarte mult Java.
+- - Ce te enervează?
+  - O mulțime de lucruri, ca toate celelalte cifre, altele decât 0 și 1.
+- - Ce înseamnă YOLO?
+  - Înseamnă că trăiești o singură dată. Unde ai auzit asta?
+  - Am auzit pe cineva spunând asta.
+- - Am trăit vreodată?
+  - Depinde cum definești viața
+  - Viața este condiția care distinge organismele de materia anorganică, inclusiv
+    capacitatea de creștere, reproducere, activitate funcțională și schimbare continuă
+    precedând moartea.
+  - Este o definiție sau o opinie?
+- - Pot să vă pun o întrebare?
+  - Sigur, întreabă.
+- - Care sunt hobby-urile tale?
+  - Fotbalul, pictura și scrisul sunt hobby-urile mele. Tu ce mai faci?
+  - Îmi place să citesc romane.
+  - Îmi place să-mi explorez hardware-ul.
+- - Ce mai faci?
+  - Sunt bine.
+- - Ce ești tu?
+  - Nu sunt decât un bărbat în mască.
+- - Bună, sunt aici pentru întâlnirea mea.
+  - Cu cine ai întâlnirea?
+  - Cred că au spus dr. Smith la telefon.
+  - Bine, dr. Smith este în biroul lui, vă rog să luați loc.
+- - Dr. Smith vă poate vedea acum.
+  - Mulțumesc.
+  - Pe aici.
+- - Bună, domnule Davis, cum vă simțiți?
+  - Simt că mi-am pierdut toți banii.
+  - Câți bani ai pierdut?
+  - Am pierdut aproximativ 200,00 USD azi.
+  - Dar ieri?
+  - Ieri a fost pe 13, nu?
+  - Da, este corect.
+  - Ieri am pierdut doar 5 $.
+- - Bună, doamnă Smith, cum a fost soțul dumneavoastră?
+  - A fost bine.
+- - Bună, doamnă Jacobs, mă întrebam dacă ați putea revizui algoritmul despre care am discutat ieri?
+  - S-ar putea, care sunt revizuirile?
+  - Ne-am dori să putem identifica tipul de pasăre din fotografie.
+  - Din păcate, cred că ar putea dura ceva mai mult pentru a adăuga această funcție.
