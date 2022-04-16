@@ -699,8 +699,8 @@ Website: http://emilcarlsson.se/
   <div id="sidepanel">
     <div id="profile">
       <div class="wrap">
-        <img id="profile-img" src="https://avatars3.githubusercontent.com/u/30492527?s=460&v=4" class="online" alt="" />
-        <p>Pema Grg</p>
+        <img id="profile-img" src="https://avatars.githubusercontent.com/u/19950368?s=96&v=4" class="online" alt="" />
+        <p>Alex</p>
 
       </div>
     </div>
@@ -735,8 +735,8 @@ Website: http://emilcarlsson.se/
     <div class="messages">
       <ul>
         <li class="sent">
-          <img src="https://avatars3.githubusercontent.com/u/30492527?s=460&v=4" alt="" />
-          <p>Hello am you.. Please write ur message to continue the chat.</p>
+          <img src="https://avatars.githubusercontent.com/u/19950368?s=96&v=4" alt="" />
+          <p>Hello I am Alex.</p>
 
         </li>
         <li class="replies">
@@ -799,7 +799,7 @@ function newMessage() {
       }
 
 
-      $('<li class="sent"><img src="https://avatars3.githubusercontent.com/u/30492527?s=460&v=4" alt="" /><p>' + message + '</p></li>').appendTo($('.messages ul'));
+      $('<li class="sent"><img src="https://avatars.githubusercontent.com/u/19950368?s=96&v=4" alt="" /><p>' + message + '</p></li>').appendTo($('.messages ul'));
       $.get("/get", { msg: message }).done(function(data) {
         $('<li class="replies"><img src="https://miro.medium.com/max/327/1*paQ7E6f2VyTKXHpR-aViFg.png" alt="" /><p>' + data + '</p></li>').appendTo($('.messages ul'));
         });

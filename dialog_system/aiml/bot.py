@@ -1,7 +1,9 @@
+from info_system import main, API
+
 from flask import Flask, render_template, request
 import os
 import aiml
-from autocorrect import spell
+from autocorrect import Speller
 
 app = Flask(__name__)
 
@@ -25,14 +27,20 @@ def home():
 
 @app.route("/get")
 def get_bot_response():
+    spell = Speller()
     query = request.args.get('msg')
     query = [spell(w) for w in (query.split())]
     question = " ".join(query)
-    response = k.respond(question)
-    if response:
-        return (str(response))
+
+    queryResponse = main.queryApp(question)
+    if queryResponse is None:
+        response = k.respond(question)
     else:
-        return (str(":)"))
+        response = queryResponse[0]['name']
+    if response:
+        return str(response)
+    else:
+        return str(":)")
 
 
 if __name__ == "__main__":

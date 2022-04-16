@@ -1,7 +1,8 @@
 import requests
 from abc import ABC, abstractmethod
 from amadeus import Client, ResponseError
-
+from geopy import geocoders
+# import geocoder
 
 
 class BaseAPI(ABC):
@@ -33,13 +34,14 @@ class AmadeusAPI(BaseAPI):
             client_secret=self.api_secret
         )
 
-
     def query(self, query_str):
 
         try:
+            gn = geocoders.GeoNames(username='funnnkk')
 
-            response = self.amadeus_client.reference_data.locations.points_of_interest.get(latitude=41.397158, longitude=2.160873)
-
+            location = gn.geocode(query_str)
+            response = self.amadeus_client.reference_data.locations.points_of_interest.get(latitude=location.latitude,
+                                                                                           longitude=location.longitude)
             return response.data
         except ResponseError as error:
             print(error)
