@@ -8,3 +8,4 @@ def cityEntity(query):
     for word in response.ents:
         if word.label_ == "GPE":
             return word.text
+    return 0

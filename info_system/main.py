@@ -8,6 +8,8 @@ def queryApp(query):
         # query = input("Please provide a query or type stop to finish session:\n")
 
     city = cityEntity.cityEntity(query)
+    if city is 0:
+        return
     if query.lower() == 'stop':
         exit(0)
     resp = api_caller.query(city)
