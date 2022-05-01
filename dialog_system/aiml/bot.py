@@ -1,12 +1,10 @@
-from info_system import main, API
-
+from info_system import main
 from flask import Flask, render_template, request
 import os
 import aiml
 from autocorrect import Speller
 
 app = Flask(__name__)
-
 BRAIN_FILE = "aiml_pretrained_model.dump"
 
 # Kernel object is the public interface to the AIML interpreter.
