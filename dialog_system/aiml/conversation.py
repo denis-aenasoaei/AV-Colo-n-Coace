@@ -2,7 +2,7 @@ import os
 import aiml
 from autocorrect import spell
 
-BRAIN_FILE= "aiml_pretrained_model.dump"
+BRAIN_FILE = "aiml_pretrained_model.dump"
 
 k = aiml.Kernel()
 
@@ -15,7 +15,6 @@ else:
     print("Saving brain file: " + BRAIN_FILE)
     k.saveBrain(BRAIN_FILE)
 
-
 while True:
     query = input("User > ")
     query = [spell(w) for w in (query.split())]
@@ -25,4 +24,3 @@ while True:
         print("bot > ", response)
     else:
         print("bot > :) ", )
-

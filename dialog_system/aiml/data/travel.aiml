@@ -11,79 +11,123 @@
 <!-- -->
 <category>
 <pattern>What do I have to take with me on a trip?</pattern>
-<template>Hmm .. it depends</template>
-<template>Where are you going?</template>
-<template>In which area are you going to?</template>
-<template>Trip to the mountains, to the sea?</template>
+<template>
+<random>
+<li>Hmm .. it depends</li>
+<li>Where are you going?</li>
+<li>In which area are you going to?</li>
+<li>Trip to the mountains, to the sea?</li>
+</random>
+</template>
 </category>
 <category>
 <pattern>When could I plan a trip to the mountains?</pattern>
-<template>Would you like to see snow?</template>
-<template>Are you a fan of extreme weather?</template>
-<template>Hiking in the mountains is usually more enjoyable during the summer.</template>
-<template>Which is your favorite season?</template>
+<template>
+<random>
+<li>Would you like to see snow?</li>
+<li>Are you a fan of extreme weather?</li>
+<li>Hiking in the mountains is usually more enjoyable during the summer.</li>
+<li>Which is your favorite season?</li>
+</random>
+</template>
 </category>
 <category>
 <pattern>Do I need snow guards if I go to the mountains in the winter?</pattern>
-<template>Yes, in most cases.</template>
-<template>It depends on the weather.</template>
-<template>Yes, if the snow is heavy.</template>
-<template>Not always.</template>
-<template>Depending on the snow cover.</template>
+<template>
+<random>
+<li>Yes, in most cases.</li>
+<li>It depends on the weather.</li>
+<li>Yes, if the snow is heavy.</li>
+<li>Not always.</li>
+<li>Depending on the snow cover.</li>
+</random>
+</template>
 </category>
 <category>
 <pattern>How can I protect myself from wild animals?</pattern>
-<template>Which animals?</template>
-<template>From what area?</template>
-<template>What animals are you talking about?</template>
-<template>Can you be more explicit?</template>
+<template>
+<random>
+<li>Which animals?</li>
+<li>From what area?</li>
+<li>What animals are you talking about?</li>
+<li>Can you be more explicit?</li>
+</random>
+</template>
 </category>
 <category>
 <pattern>Is it safe to travel with small children?</pattern>
-<template>How small?</template>
-<template>In which area do you plan to travel with them?</template>
-<template>Did you consider the weather?</template>
+<template>
+<random>
+<li>How small?</li>
+<li>In which area do you plan to travel with them?</li>
+<li>Did you consider the weather?</li>
+</random>
+</template>
 </category>
 <category>
 <pattern>What do I have to take with me to the seaside?</pattern>
-<template>Don't forget about sunscreen</template>
-<template>Do you want to sunbathe?</template>
-<template>Have some sunglasses or a hat.</template>
-<template>Did you get your slippers on?</template>
+<template>
+<random>
+<li>Don't forget about sunscreen</li>
+<li>Do you want to sunbathe?</li>
+<li>Have some sunglasses or a hat.</li>
+<li>Did you get your slippers on?</li>
+</random>
+</template>
 </category>
 <category>
 <pattern>What about a trip in a rural area?</pattern>
-<template>Do you like the countryside?</template>
-<template>Do you want to discover authentic Romania?</template>
-<template>Sounds good.</template>
-<template>I like the idea.</template>
+<template>
+<random>
+<li>Do you like the countryside?</li>
+<li>Do you want to discover authentic Romania?</li>
+<li>Sounds good.</li>
+<li>I like the idea.</li>
+</random>
+</template>
 </category>
 <category>
 <pattern>Can I travel around the country without my own car?</pattern>
-<template>How about a caravan?</template>
-<template>I think so.</template>
-<template>I'm not sure.</template>
+<template>
+<random>
+<li>How about a caravan?</li>
+<li>I think so.</li>
+<li>I'm not sure.</li>
+</random>
+</template>
 </category>
 <category>
 <pattern>Is it possible to travel around the country with little amount of money?</pattern>
-<template>Surely.</template>
-<template>More than likely.</template>
-<template>It depends on the area.</template>
-<template>What amount do you mean?</template>
+<template>
+<random>
+<li>Surely.</li>
+<li>More than likely.</li>
+<li>It depends on the area.</li>
+<li>What amount do you mean?</li>
+</random>
+</template>
 </category>
 <category>
 <pattern>Is it a good idea to ride a bike through the woods?</pattern>
-<template>It could be rough terrain.</template>
-<template>Are you a professional?</template>
-<template>It is risky.</template>
-<template>Have you done this before?</template>
-<template>I do not know what to say</template>
+<template>
+<random>
+<li>It could be rough terrain.</li>
+<li>Are you a professional?</li>
+<li>It is risky.</li>
+<li>Have you done this before?</li>
+<li>I do not know what to say</li>
+</random>
+</template>
 </category>
 <category>
 <pattern>How is it better to travel alone or in a group?</pattern>
-<template>How do you like it?</template>
-<template>Where do you want to travel?</template>
-<template>I prefer alone.</template>
-<template>How many friends?</template>
+<template>
+<random>
+<li>How do you like it?</li>
+<li>Where do you want to travel?</li>
+<li>I prefer alone.</li>
+<li>How many friends?</li>
+</random>
+</template>
 </category>
 </aiml>

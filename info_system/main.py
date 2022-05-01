@@ -1,5 +1,5 @@
-from info_system.API import BaseApi
-from info_system import cityEntity
+import API.BaseApi as BaseApi
+import cityEntity
 
 def queryApp(query):
 

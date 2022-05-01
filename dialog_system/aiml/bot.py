@@ -7,7 +7,11 @@ from autocorrect import Speller
 
 app = Flask(__name__)
 
-BRAIN_FILE= "aiml_pretrained_model.dump"
+BRAIN_FILE = "aiml_pretrained_model.dump"
+
+# Kernel object is the public interface to the AIML interpreter.
+# “learn” method loads the contents of an AIML file into the kernel.
+# While the “respond” method is used to get the response from the learned AIML file.
 k = aiml.Kernel()
 
 if os.path.exists(BRAIN_FILE):
@@ -44,7 +48,4 @@ def get_bot_response():
 
 
 if __name__ == "__main__":
-    # app.run()
     app.run(host='0.0.0.0', port='5000')
-
-
