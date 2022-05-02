@@ -11,7 +11,7 @@ def convert_audio(in_filename, **input_kwargs):
     try:
         out, err = (ffmpeg
             .input(in_filename, **input_kwargs)
-            .output('ga.wav', format='wav', acodec='pcm_s16le', ac=1, ar='16k')
+            .output('audio.wav', format='wav', acodec='pcm_s16le', ac=1, ar='16k')
             .overwrite_output()
             .run(capture_stdout=True, capture_stderr=True)
         )

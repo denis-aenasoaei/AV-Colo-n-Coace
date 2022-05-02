@@ -1,0 +1,9 @@
+pyaudio~=0.2.11
+deepspeech~=0.9.3
+webrtcvad~=2.0.10
+numpy==1.14.4
+scipy>=1.1.0
+ffmpeg
+ffmpeg-python
+argparse
+SoX
