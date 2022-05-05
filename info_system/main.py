@@ -3,7 +3,8 @@ from info_system import cityEntity
 
 
 def queryApp(query):
-    api_caller = BaseApi.AmadeusAPI()
+    # api_caller = BaseApi.AmadeusAPI()
+    api_caller = BaseApi.GeoNamesAPI()
     city = cityEntity.cityEntity(query)
 
     if city == 0:
