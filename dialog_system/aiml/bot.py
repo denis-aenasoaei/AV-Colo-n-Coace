@@ -38,7 +38,7 @@ def get_bot_response():
     if queryResponse is None:
         response = k.respond(question)
     else:
-        response = queryResponse[0]['name']
+        response = queryResponse
     if response:
         return str(response)
     else:
