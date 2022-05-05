@@ -2,6 +2,8 @@ import requests
 from abc import ABC, abstractmethod
 from amadeus import Client, ResponseError
 from geopy import geocoders
+
+
 # import geocoder
 
 
@@ -45,3 +47,15 @@ class AmadeusAPI(BaseAPI):
             return response.data
         except ResponseError as error:
             print(error)
+
+
+class GeoNamesAPI(BaseAPI):
+    def query(self, query_str):
+        response = []
+        with open('C:\\Users\\Alex\\Desktop\\MLC\\Sem2\\AV\\AV-Colo-n-Coace\\info_system\\RO.txt', 'r', encoding='utf8') as file:
+            for line in file.readlines():
+                response.append(line.split('\t'))
+        for respons in response:
+            if respons[1] == query_str:
+                return respons
+        return None
