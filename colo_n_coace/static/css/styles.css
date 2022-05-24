@@ -11327,3 +11327,15 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
     margin-left: -15rem;
   }
 }
+
+.media {
+  padding: 16px 12px;
+  -webkit-transition: background-color .2s linear;
+  transition: background-color .2s linear;
+}
+
+.modal-body img {
+  display: block; 
+  margin-left: auto;
+  margin-right: auto;
+}
