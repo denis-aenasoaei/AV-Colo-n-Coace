@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<title>Colo-n coace virtual asistant</title>
+
+<link rel="stylesheet" href="public/bootstrap.min.css">
+<link rel="stylesheet" href="public/styles.css">
+<link href="http://fonts.cdnfonts.com/css/open-sans" rel="stylesheet">
+<style>
+
+
+</style>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col col-sm-12 col-lg-3 logo-box">
+                <img class="logo" src="public/logo.png">
+            </div>
+            <div class="col col-sm-12 col-lg-7">
+                <h1>Welcome to Colo-n coace</h1>
+                <p>Do you have a place in mind?</p>
+            </div>
+        </div>
+
+
+        <div class="row justify-content-xs-center">
+            <div class="col col-lg-5 col-md-12 col-sm-12 capture-mic-box">
+                <div class="lds-ellipsis">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <button id="capture-mic-stream" class="capture-mic"><span class="material-icons">mic</span></button>
+                <div class="lds-ellipsis">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <!-- onclick="startRecording()"   -->
+            </div>
+            <div class="col col-lg-5 col-md-12 col-sm-12 voice-interpreter-box">
+                <label>Write down or hold mic and ask what you are looking for</label>
+                <textarea id="voice-interpreter">Show me events/museums/hotels in my location.</textarea>
+            </div>
+        </div>
+        <!-- <div class="row">
+                <div class="col col-lg-5 col-md-12 col-sm-12">
+                    1 of 3
+                </div>
+                <div class="col-md-auto col-lg-5 col-md-12 col-sm-12">
+                    Map here
+                </div>
+                <div class="col col-lg-5 col-md-10 col-sm-12">
+                    3 of 3
+                </div>
+            </div> -->
+    </div>
+
+    <div class="rezultate">
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="public/binary.min.js"></script>
+    <script src="public/recorder.js"></script>
+
+    <script>
+        let i = 1, recOn = false;
+
+        function streamMic() {
+            const id = Math.random();
+            $('.lds-ellipsis').show();
+            if (!recOn) {
+                recOn = true;
+            }
+            console.log(recOn, i++, id);
+        }
+
+        function stopMic() {
+            const id = Math.random();
+            $('.lds-ellipsis').hide();
+            if (recOn) {
+                recOn = false;
+            }
+            console.log(recOn, i++, id);
+        }
+
+        const captureMic = document.getElementById('capture-mic-stream');
+        captureMic.addEventListener('mousedown', streamMic);
+        captureMic.addEventListener('mouseup', stopMic);
+
+    </script>
+</body>
+
+</html>

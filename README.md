@@ -18,3 +18,33 @@ https://sites.google.com/view/virtualassistants-fii/project-resources
 
 ## Project Google Drive ##
 https://drive.google.com/drive/folders/1KQ-z0Htn-Vm3sZRbpU-XRVCLpucg4VkK
+
+## Steps to get your local project working ##
+Preparing virtual environment (Once)
+```
+python -m pip install virtualenv==20.13.1
+python -m virtualenv cc
+```
+Activating it on Mac OS / Linux (Each time, before running project)
+```
+source cc/Scripts/activate
+```
+Windows (Each time, before running project)
+```
+cc/Scripts/activate
+```
+To deactivate it use
+```
+deactivate
+```
+
+Install required python libraries <!-- Add new libraries to the 'req.txt' gradually -->
+```
+python -m pip install -r req.txt
+```
+
+Run Django server locally at *http://127.0.0.1:8000/*
+```
+python manage.py runserver
+```
+<!-- python manage.py migrate -->

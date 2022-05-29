@@ -1,6 +1,7 @@
 import ffmpeg
 import argparse
 import os
+import sys
 
 
 parser = argparse.ArgumentParser(description='Converteste fisier audio la sample rate 16000')
@@ -11,7 +12,7 @@ def convert_audio(in_filename, **input_kwargs):
     try:
         out, err = (ffmpeg
             .input(in_filename, **input_kwargs)
-            .output('audio.wav', format='wav', acodec='pcm_s16le', ac=1, ar='16k')
+            .output(in_filename.replace("audio.wav", "audio-16hz.wav"), format='wav', acodec='pcm_s16le', ac=1, ar='16k')
             .overwrite_output()
             .run(capture_stdout=True, capture_stderr=True)
         )
@@ -26,8 +27,8 @@ def convert_audio(in_filename, **input_kwargs):
 if __name__ == '__main__':
     args = parser.parse_args()
     print(args.infile)
-    print(os.path.abspath("LJ001-0001.wav"))
-    audio_data = convert_audio("LJ001-0001.wav")
+    print(os.path.abspath(args.infile))
+    audio_data = convert_audio(os.path.abspath(args.infile))
     ## print(os.path.join(os.getcwd(), os.path.dirname("LJ001-0001.wav")))
     # audio_data = convert_audio(os.path.abspath("LJ001-0001.wav"))
     
