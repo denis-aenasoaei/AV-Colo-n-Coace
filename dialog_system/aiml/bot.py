@@ -38,8 +38,17 @@ def get_bot_response():
     if queryResponse is None:
         response = k.respond(question)
     else:
-        response = queryResponse[0]['name']
+        response = queryResponse
+
+    if 'weather' in question.lower():
+        query_response = main.meteo_query(question)
+        if query_response is None:
+            response = k.respond(question)
+        else:
+            response = query_response
+
     if response:
+        print('Response:', response)
         return str(response)
     else:
         return str(":)")
