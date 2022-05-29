@@ -21,10 +21,14 @@
 </category>
 <category>
 <pattern>WHAT IS THE WEATHER IN * ?</pattern>
-<template>There are <think><set name="query"><star/></set></think> Celsius degrees.</template>
+<template><think><set name="query"><star/></set></think></template>
 </category>
 <category>
 <pattern>HOW IS THE WEATHER IN * ?</pattern>
-<template>There are <think><set name="query"><star/></set></think> Celsius degrees.</template>
+<template><think><set name="query"><star/></set></think></template>
+</category>
+<category>
+<pattern>HOW'S THE WEATHER IN * ?</pattern>
+<template><think><set name="query"><star/></set></think></template>
 </category>
 </aiml>
