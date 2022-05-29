@@ -47,6 +47,13 @@ def get_bot_response():
         else:
             response = query_response
 
+    if 'route' in question.lower():
+        query_response = main.map_query(question)
+        if query_response is None:
+            response = k.respond(question)
+        else:
+            response = query_response
+
     if response:
         print('Response:', response)
         return str(response)

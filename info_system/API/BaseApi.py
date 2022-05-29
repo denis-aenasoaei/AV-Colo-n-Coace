@@ -4,6 +4,7 @@ from amadeus import Client, ResponseError
 from geopy import geocoders
 import os
 from requests.exceptions import HTTPError
+from requests.structures import CaseInsensitiveDict
 import json
 
 
@@ -76,9 +77,30 @@ class MeteoAPI(BaseAPI):
                      'q': city}
             response = requests.get(self.base_url, params=query)
             response = dict(response.json())
-            return response['current']['temp_c']
+            return response['current']['temp_c'], response['current']['condition']['text']
 
         except HTTPError as http_err:
             print(f'HTTP error occurred: {http_err}')
         except Exception as err:
             print(f'An error occurred: {err}')
+
+
+class MapAPI(BaseAPI):
+    api_key = '554afae1313b40ce9ffa2ccbbee17cc8'
+    base_url = 'https://api.geoapify.com/v1/routing'
+
+    def query(self, coordinates):
+        query = {'apiKey': self.api_key,
+                 'waypoints': f'{str(coordinates[0])},{str(coordinates[1])}|'
+                              f'{str(coordinates[2])},{str(coordinates[3])}',
+                 'mode': 'drive'}
+
+        headers = CaseInsensitiveDict()
+        headers['Accept'] = 'application/json'
+
+        response = requests.get(self.base_url, headers=headers, params=query)
+        response = dict(response.json())
+
+        distance_in_km = response['features'][0]['properties']['distance'] / 1000.0
+
+        return f'There are {distance_in_km} km between them.'

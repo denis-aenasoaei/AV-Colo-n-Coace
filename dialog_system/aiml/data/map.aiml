@@ -10,11 +10,19 @@
 <!-- Last modified 11/23/2011 -->
 <!-- -->
 <category>
-<pattern>FIND THE NEAREST STARBUCKS</pattern>
-<template>I’m looking on the map. <oob><map>Starbucks</map></oob> </template>
+<pattern>FIND THE NEAREST * </pattern>
+<template>I am looking on the map. <oob><map>nearest <star/></map></oob> </template>
 </category>
 <category>
-<pattern>WHERE IS PALAS MALL LOCATED?</pattern>
-<template>I’m looking on the map. <oob><map>Palas Mall</map></oob> </template>
+<pattern>FIND THE NEAREST <set>location</set> </pattern>
+<template>Trying to search for "nearest <star/>". <oob><search>NEAREST <star/></search></oob></template>
+</category>
+<category>
+<pattern>WHERE IS * LOCATED?</pattern>
+<template>I am looking on the map. <oob><map><star/></map></oob> </template>
+</category>
+<category>
+<pattern>WHERE IS <set>location</set> LOCATED?</pattern>
+<template>Let's try searching for "<star/> location". <oob><search><star/> LOCATION</search></oob></template>
 </category>
 </aiml>

@@ -23,4 +23,18 @@ def meteo_query(query):
     if query.lower() == 'stop':
         exit(0)
 
-    return api_caller.query(city)
+    temp_c, condition = api_caller.query(city)
+
+    return f"There are {temp_c} Celsius degrees: {condition}."
+
+
+def map_query(query):
+    api_caller = BaseApi.MapAPI()
+    coordinates = cityEntity.find_waypoints(query)
+
+    if coordinates == 0:
+        return
+    if query.lower() == 'stop':
+        exit(0)
+
+    return api_caller.query(coordinates)
