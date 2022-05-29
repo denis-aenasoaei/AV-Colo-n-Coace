@@ -65,7 +65,7 @@
                 <div class="page-content page-container" id="page-content">
                   <div class="padding">
                     <div class="row container d-flex justify-content-center">
-                        <div class="col-md-8">
+                        <div class="col-md-6">
                           <div class="card card-bordered">
                             <div class="card-header">
                               <h4 class="card-title">Let's talk</h4>
@@ -116,6 +116,9 @@
                                     <label>please wait. searching...</label>
                                 </div>
                               </div>
+                              <div id="search-results-box" style="display: none;">
+                                
+                              </div>
 
                             </div>
                           </div>
@@ -158,7 +161,7 @@
                 <img src="{% static 'img/record.gif' %}" height="100" width="100" style="display: block; margin-left: auto; margin-right: auto;">
               </div>
               <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button id="cancel-mic-btn" type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                 <button id="stream-mic-btn" type="button" class="btn btn-primary" data-bs-dismiss="modal">Send</button>
               </div>
             </div>
@@ -174,6 +177,27 @@
         <script src="{% static 'js/recorder.js' %}"></script>
         <script>
           let i = 1, recOn = false;
+
+          function readSearchQuery() {
+
+              $.ajax({
+                  url: "http://localhost:3700/results",
+                  method: 'get',
+                  processData: false,
+                  contentType: false,
+                    success: function(data){
+                      if (recOn) {recOn = false;}
+                      console.log("/results ", data, "\n")
+                      $('.capture-mic-box').hide();
+                      $('#search-results-box').html(`<p>${data}</p>`)
+                      $('#search-results-box').show();
+                    },
+                    error: function(e) {
+                      console.log("error: ", e)
+                    },
+                  });
+            
+          }
   
           function streamMic() {
               const id = Math.random();
@@ -181,16 +205,48 @@
               if (!recOn) {
                   recOn = true;
               }
-              console.log(recOn, i++, id);
+              startRecording();
+              console.log("startRecording: ", recOn, i++, id);
           }
 
           function stopMic() {
               const id = Math.random();
               $('.capture-mic-box').show();
-              if (recOn) {
-                  recOn = false;
-              }
-              console.log(recOn, i++, id);
+              $('#search-results-box').html("")
+              $('#search-results-box').hide();
+              
+              
+              stopRecording();
+              console.log("startRecording: ", recOn, i++, id);
+
+              setTimeout(()=>{
+
+                $.ajax({
+                  url: "http://localhost:3700/speech/to/text",
+                  method: 'post',
+                  processData: false,
+                  contentType: false,
+                    success: function(data){
+                      if (recOn) {recOn = false;}
+                      console.log("/speech/to/text ", data, "\n");
+
+                      setTimeout(()=>{
+                        readSearchQuery();
+                      }, 7000)
+
+                    },
+                    error: function(e) {
+                      $('.capture-mic-box').hide();
+                      $('#search-results-box').html(`<p>There was an error</p>`)
+                      $('#search-results-box').show();
+                      if (recOn) {recOn = false;}
+                      console.log("error: ", e)
+                    },
+                  });
+
+              }, 2000);
+             
+
           }
 
           function cancelMic() {

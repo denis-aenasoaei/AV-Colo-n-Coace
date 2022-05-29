@@ -1,7 +1,7 @@
 /** Copyright https://github.com/gabrielpoca/browser-pcm-stream */
 
 (function (window) {
-  var client = new BinaryClient('ws://localhost:9001');
+  var client = new BinaryClient('ws://localhost:9101');
 
   client.on('open', function () {
     window.Stream = client.createStream();
