@@ -178,6 +178,23 @@
         <script>
           let i = 1, recOn = false;
 
+          function answerBot(){
+            $.ajax({
+                  url: "http://localhost:3700/bot",
+                  method: 'get',
+                  processData: false,
+                  contentType: false,
+                    success: function(data){
+                      console.log("/results ", data, "\n")
+                      const text = $('#search-results-box').html();
+                      $('#search-results-box').html(text+`<p>${data}</p>`);
+                    },
+                    error: function(e) {
+                      console.log("error: ", e)
+                    },
+                  });
+          }
+
           function readSearchQuery() {
 
               $.ajax({
@@ -187,10 +204,11 @@
                   contentType: false,
                     success: function(data){
                       if (recOn) {recOn = false;}
-                      console.log("/results ", data, "\n")
+                      console.log("/results ", data, "\n");
                       $('.capture-mic-box').hide();
                       $('#search-results-box').html(`<p>${data}</p>`)
                       $('#search-results-box').show();
+                      answerBot();
                     },
                     error: function(e) {
                       console.log("error: ", e)

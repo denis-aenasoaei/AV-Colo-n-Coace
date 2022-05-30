@@ -5,7 +5,7 @@ var wav = require('wav');
 const path = require('path');
 var cors = require('cors')
 
-var { speechToText } = require('./deepspeechCaller');
+var { speechToText, callBot } = require('./deepspeechCaller');
 
 var port = 3700;
 var outFile = path.join(__dirname, './audio/audio.wav');
@@ -29,13 +29,30 @@ app.post('/speech/to/text', function (req, res) {
 });
 
 app.get('/results', function (req, res) {
+
   setTimeout(() => {
     const filePath = path.resolve(__dirname, './audio/coloncoace-output.txt')
     console.log('\x1b[36m%s\x1b[0m', filePath);
     const data = fs.readFileSync(filePath, 'utf8');
     console.log('\x1b[36m%s\x1b[0m', data);
+    
     res.send(data)
-  }, 1000)
+  }, 2000)
+
+});
+
+
+app.get('/bot', function (req, res) {
+  
+  setTimeout(() => {
+    const filePath = path.resolve(__dirname, './audio/bot-output.txt')
+    console.log('\x1b[36m%s\x1b[0m', filePath);
+    const data = fs.readFileSync(filePath, 'utf8');
+    
+    console.log('\x1b[36m%s\x1b[0m', data.split("bot>")[1]);
+    
+    res.send("bot>"+data.split("bot>")[1])
+  }, 14000)
 
 });
 

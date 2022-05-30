@@ -41,6 +41,33 @@ async function speechToText(id) {
         var command = [conda_exec, 'run', '-n', env_name, sub_cmd].join(" ")
 
         exec(`( ${command} )`, (error, stdout, stderr) => {
+            callBot(id);
+            if (error) {
+                console.log(`error: ${error.message}`);
+                return;
+            }
+            if (stderr) {
+                console.log(`stderr: ${stderr}`);
+                return;
+            }
+            
+            console.log(id, `stdout: ${stdout}`);
+        });
+
+    }, 2000)
+}
+
+async function callBot(id) {
+
+    setTimeout(() => {
+        var conda_exec = "%homedrive%%homepath%\\miniconda3\\Scripts\\conda.exe"
+        var env_name = "coloncoacebot"
+        var sub_cmd = "python ..\\dialog_system\\aiml\\conversation.py > .\\audio\\bot-output.txt"
+
+      
+        var command = [conda_exec, 'run', '-n', env_name, sub_cmd].join(" ")
+
+        exec(`( ${command} )`, (error, stdout, stderr) => {
             if (error) {
                 console.log(`error: ${error.message}`);
                 return;
@@ -52,11 +79,12 @@ async function speechToText(id) {
             console.log(id, `stdout: ${stdout}`);
         });
 
-    }, 2000)
+    }, 1000)
 
 
 }
 
 module.exports = {
-    speechToText
+    speechToText,
+    callBot
 }
