@@ -5,7 +5,6 @@ from geopy import geocoders
 import os
 from requests.exceptions import HTTPError
 from requests.structures import CaseInsensitiveDict
-import json
 
 
 class BaseAPI(ABC):
@@ -53,8 +52,8 @@ class AmadeusAPI(BaseAPI):
 class GeoNamesAPI(BaseAPI):
     def query(self, query_str):
         response = []
-        with open(os.path.join('C:\\Users\\Camelia\\Documents\\GitHub\\AV-Colo-n-Coace\\info_system', 'RO.txt'), 'r',
-                  encoding='utf8') as file:
+        with open(os.path.join('C:\\Users\\Camelia\\Documents\\GitHub\\AV-Colo-n-Coace\\dialog_system\\info_system',
+                               'RO.txt'), 'r', encoding='utf8') as file:
             for line in file.readlines():
                 response.append(line.split('\t'))
         for respons in response:

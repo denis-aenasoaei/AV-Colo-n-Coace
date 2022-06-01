@@ -1,4 +1,4 @@
-from info_system import main
+from dialog_system.info_system import main
 from flask import Flask, render_template, request
 import os
 import aiml
@@ -31,7 +31,7 @@ def home():
 def get_bot_response():
     spell = Speller()
     query = request.args.get('msg')
-    query = [spell(w) for w in (query.split())]
+    query = [w for w in (query.split())]
     question = " ".join(query)
 
     queryResponse = main.queryApp(question)
