@@ -20,7 +20,8 @@ https://sites.google.com/view/virtualassistants-fii/project-resources
 https://drive.google.com/drive/folders/1KQ-z0Htn-Vm3sZRbpU-XRVCLpucg4VkK
 
 ## Tutorial
-[Video setup tutorial and demo](https://youtu.be/CIklggPGRMM)
+[Video setup tutorial and demo](https://drive.google.com/file/d/1-szc4ksH4ksLyviXsDRDDhkaU8w-S8Sr/view?usp=sharing)
+
 
 ## Steps to get your local project working ##
 Preparing virtual environment (Once)
