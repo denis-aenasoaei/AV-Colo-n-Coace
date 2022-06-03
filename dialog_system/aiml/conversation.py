@@ -50,4 +50,4 @@ with  open(os.path.abspath("./audio/coloncoace-output.txt")) as file:
     if response:
         print("\nbot>" + str(response))
     else:
-        print("bot>:)")
+        print("\nbot>:)")

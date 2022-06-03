@@ -208,7 +208,9 @@
                       $('.capture-mic-box').hide();
                       $('#search-results-box').html(`<p>${data}</p>`)
                       $('#search-results-box').show();
-                      answerBot();
+                      setTimeout(()=>{
+                        answerBot();
+                      }, 37000);
                     },
                     error: function(e) {
                       console.log("error: ", e)
@@ -250,7 +252,7 @@
 
                       setTimeout(()=>{
                         readSearchQuery();
-                      }, 7000)
+                      }, 17000)
 
                     },
                     error: function(e) {

@@ -53,7 +53,7 @@ class AmadeusAPI(BaseAPI):
 class GeoNamesAPI(BaseAPI):
     def query(self, query_str):
         response = []
-        with open(os.path.join('C:\\Users\\Camelia\\Documents\\GitHub\\AV-Colo-n-Coace\\info_system', 'RO.txt'), 'r',
+        with open(os.path.abspath('..\\dialog_system\\aiml\\info_system\\RO.txt'), 'r',
                   encoding='utf8') as file:
             for line in file.readlines():
                 response.append(line.split('\t'))

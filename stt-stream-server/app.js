@@ -52,7 +52,7 @@ app.get('/bot', function (req, res) {
     console.log('\x1b[36m%s\x1b[0m', data.split("bot>")[1]);
     
     res.send("bot>"+data.split("bot>")[1])
-  }, 14000)
+  }, 3000)
 
 });
 
