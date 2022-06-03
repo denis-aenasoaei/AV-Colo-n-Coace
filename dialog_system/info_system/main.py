@@ -1,5 +1,5 @@
-from info_system.API import BaseApi
-from info_system import cityEntity
+from dialog_system.info_system.API import BaseApi
+from dialog_system.info_system import cityEntity
 
 
 def queryApp(query):
